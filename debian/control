@@ -10,7 +10,7 @@ Homepage: http://galette.tuxfamily.org
 
 Package: galette
 Architecture: all
-Depends: ${misc:Depends}, libapache2-mod-php, apache2 | httpd
+Depends: ${misc:Depends}, libapache2-mod-php (>= 5.3.3), apache2 | httpd
 Recommends: postgresql
 Description: Membership and subscription management for associations
  Galette is a web application for French-speaking associations that

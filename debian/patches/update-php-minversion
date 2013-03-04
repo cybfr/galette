@@ -1,0 +1,17 @@
+Description: Debian Squeeze has PHP 5.3.3
+ But that version has all the (security) features that Galette relies on.
+ This is even documented on
+ http://galette.tuxfamily.org/documentation/fr/installation/index.html
+Author: Raphaël Hertzog <hertzog@debian.org>
+
+--- a/galette/includes/galette.inc.php
++++ b/galette/includes/galette.inc.php
+@@ -36,7 +36,7 @@
+  */
+ 
+ if ( !defined('GALETTE_PHP_MIN') ) {
+-    define('GALETTE_PHP_MIN', '5.3.7');
++    define('GALETTE_PHP_MIN', '5.3.3');
+ }
+ 
+ // check required PHP version...
