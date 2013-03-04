@@ -3,5 +3,6 @@ galette (0.7.4-1) UNRELEASED; urgency=low
   * Initial release.
   * Add debian/patches/update-php-minversion to make galette work
     on php 5.3.3 of Debian Squeeze.
+  * Install /etc/apache2/conf.d/galette.conf.
 
  -- Raphaël Hertzog <hertzog@debian.org>  Mon, 04 Mar 2013 21:21:34 +0100

@@ -1,1 +1,2 @@
 galette/* usr/share/galette/
+debian/apache/galette.conf etc/apache2/conf.d/
