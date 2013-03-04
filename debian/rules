@@ -6,7 +6,7 @@
 override_dh_install:
 	dh_install
 	# Drop directories replaced by symlinks
-	for dir in cache exports logs photos tempimages templaces_c; do \
+	for dir in cache exports logs photos tempimages templates_c; do \
 		rm -rf debian/galette/usr/share/galette/$$dir; \
 	done
 	mkdir -p debian/galette/etc
