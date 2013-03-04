@@ -1,0 +1,19 @@
+Dependencies
+------------
+
+- Apache 2 Webserver,
+- PHP 5.3 minimum (also tested on php 5.4);,
+- MySQL 5 or Postgresl (tested on Mysql 5.5.20 and postgresql 9.2.1),
+  and its php driver or SQLite 3.x php driver,
+- php gd extension,
+- php curl extension,
+- SSL supported enabled,
+- php tidy extension (optionnal, but recommended),
+- php gettext extension (optionnal).
+
+Installation :
+_____________
+
+Consultez le manuel en ligne :
+http://galette.tuxfamily.org/documentation/fr/installation/
+
