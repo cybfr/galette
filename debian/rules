@@ -14,9 +14,9 @@ override_dh_install:
 
 override_dh_fixperms:
 	dh_fixperms
-	chown www-data /var/log/galette
-	chown www-data /var/cache/galette/cache
-	chown www-data /var/cache/galette/tempimages
-	chown www-data /var/cache/galette/templates_c
-	chown www-data /var/lib/galette/exports
-	chown www-data /var/lib/galette/photos
+	chown www-data debian/galette/var/log/galette
+	chown www-data debian/galette/var/cache/galette/cache
+	chown www-data debian/galette/var/cache/galette/tempimages
+	chown www-data debian/galette/var/cache/galette/templates_c
+	chown www-data debian/galette/var/lib/galette/exports
+	chown www-data debian/galette/var/lib/galette/photos
