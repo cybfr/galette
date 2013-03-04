@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+	# Drop directories replaced by symlinks
+	for dir in cache exports logs photos tempimages templaces_c; do \
+		rm -rf debian/galette/usr/share/galette/$$dir; \
+	done
+	mkdir -p debian/galette/etc
+	mv debian/galette/usr/share/galette/config debian/galette/etc/galette
+
+override_dh_fixperms:
+	dh_fixperms
+	chown www-data /var/log/galette
+	chown www-data /var/cache/galette/cache
+	chown www-data /var/cache/galette/tempimages
+	chown www-data /var/cache/galette/templates_c
+	chown www-data /var/lib/galette/exports
+	chown www-data /var/lib/galette/photos

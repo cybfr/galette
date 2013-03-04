@@ -1,0 +1,7 @@
+etc/galette usr/share/galette/config
+var/log/galette usr/share/galette/logs
+var/cache/galette/cache usr/share/galette/cache
+var/cache/galette/tempimages usr/share/galette/tempimages
+var/cache/galette/templates_c usr/share/galette/templates_c
+var/lib/galette/exports usr/share/galette/exports
+var/lib/galette/photos usr/share/galette/photos

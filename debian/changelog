@@ -1,0 +1,5 @@
+galette (0.7.4-1) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Mon, 04 Mar 2013 21:21:34 +0100

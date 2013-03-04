@@ -1,0 +1,21 @@
+Source: galette
+Section: web
+Priority: optional
+Maintainer: Raphaël Hertzog <hertzog@debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.4
+Homepage: http://galette.tuxfamily.org
+#Vcs-Git: git://git.debian.org/collab-maint/galette.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/galette.git;a=summary
+
+Package: galette
+Architecture: all
+Depends: ${misc:Depends}, libapache2-mod-php, apache2 | httpd
+Recommends: postgresql
+Description: Membership and subscription management for associations
+ Galette is a web application for French-speaking associations that
+ want to manage their list of members online. The main features
+ are:
+  - subscription renewal
+  - personal profile for each member
+  - mailing of membership

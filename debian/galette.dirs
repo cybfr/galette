@@ -1,0 +1,6 @@
+/var/log/galette
+/var/cache/galette/cache
+/var/cache/galette/tempimages
+/var/cache/galette/templates_c
+/var/lib/galette/exports
+/var/lib/galette/photos
