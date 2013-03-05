@@ -9,8 +9,11 @@ override_dh_install:
 	for dir in cache exports logs photos tempimages templates_c; do \
 		rm -rf debian/galette/usr/share/galette/$$dir; \
 	done
+	# Move config to /etc
 	mkdir -p debian/galette/etc
 	mv debian/galette/usr/share/galette/config debian/galette/etc/galette
+	# Drop documentation installed in /usr/share/doc
+	rm -rf debian/galette/usr/share/galette/docs
 
 override_dh_fixperms:
 	dh_fixperms
@@ -20,3 +23,6 @@ override_dh_fixperms:
 	chown www-data debian/galette/var/cache/galette/templates_c
 	chown www-data debian/galette/var/lib/galette/exports
 	chown www-data debian/galette/var/lib/galette/photos
+
+override_dh_installchangelogs:
+	dh_installchangelogs galette/docs/CHANGES
