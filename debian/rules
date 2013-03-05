@@ -14,6 +14,8 @@ override_dh_install:
 	mv debian/galette/usr/share/galette/config debian/galette/etc/galette
 	# Drop documentation installed in /usr/share/doc
 	rm -rf debian/galette/usr/share/galette/docs
+	# Cleanup useless stuff
+	rm -rf debian/galette/usr/share/galette/lang/*.py
 
 override_dh_fixperms:
 	dh_fixperms
