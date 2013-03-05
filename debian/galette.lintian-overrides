@@ -1,0 +1,2 @@
+# I want this file, it can be useful to learn about optional dependencies
+galette: package-contains-upstream-install-documentation usr/share/doc/galette/INSTALL

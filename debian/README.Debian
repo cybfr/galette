@@ -1,0 +1,20 @@
+This Debian package of galette does not setup the database for you.
+
+To properly setup the application, you should read the upstream
+documentation at http://galette.tuxfamily.org/documentation/fr/
+
+Note however that the Debian package does set correct permissions
+and ownerships to all the directories where galette must have write
+rights except /etc/galette. Those directories are moved in /var
+and appropriate symlinks are setup in /usr/share/galette.
+
+You can "chown www-data /etc/galette" temporarily for the initial
+installation to be able to use the uptream installer. Once you're done
+with the initial installation, please run "chown -R root:root
+/etc/galette" to reset safe permissions.
+
+The required apache configuration is provided and enabled by default
+in /etc/apache2/conf.d/galette.conf. You must edit that file to let
+you access the /install/ URL from your IP address if you want to use
+the integrated installer. By default this directory is not publicly
+accessible as per uptream's recommendation.
