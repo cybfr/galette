@@ -10,7 +10,7 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/galette.git;a=summary
 
 Package: galette
 Architecture: all
-Depends: ${misc:Depends}, libapache2-mod-php (>= 5.3.3), apache2 | httpd,
+Depends: ${misc:Depends}, libapache2-mod-php5 (>= 5.3.3), apache2 | httpd,
  php5-curl, php5-gd, php5-tidy
 Recommends: php-gettext, postgresql
 Description: Membership and subscription management for associations
