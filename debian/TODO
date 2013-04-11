@@ -1,0 +1,9 @@
+* Change the packaging to point to non-embedded libraries and
+  to the real paths (without relying on symlinks in /usr/share/galette).
+
+  See
+  http://galette.tuxfamily.org/documentation/fr/installation/postinstall.html#parametrage-des-chemins
+  for the documentation and
+  https://bitbucket.org/trashy/rpm/src/e927d2eb4f4ad5b2506c48cb97af9392a94d9bd5/galette/paths.inc.php?at=default
+  for a sample of what was made for galette's RPM.
+
