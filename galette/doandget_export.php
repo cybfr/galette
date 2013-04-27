@@ -67,7 +67,8 @@ if ( $login->isAdmin() || $login->isStaff() ) {
     }
 
     // fields visibility
-    $fc = new FieldsConfig(Adherent::TABLE, null);
+    $a = new Adherent();
+    $fc = new FieldsConfig(Adherent::TABLE, $a->fields);
     $visibles = $fc->getVisibilities();
     $fields = array();
     $headers = array();
@@ -92,14 +93,12 @@ if ( $login->isAdmin() || $login->isStaff() ) {
     }
 
     $members = new Members($filters);
-    $members_list = $members->getMembersList(
+    $members_list = $members->getArrayList(
+        $filters->selected,
+        null,
         false,
-        $fields,
-        true,
         false,
-        false,
-        true,
-        true
+        $fields
     );
 
     $filename = 'filtered_memberslist.csv';
