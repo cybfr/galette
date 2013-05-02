@@ -1,4 +1,10 @@
-galette (0.7.4-1) UNRELEASED; urgency=low
+galette (0.7.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Thu, 02 May 2013 18:56:08 +0200
+
+galette (0.7.4-1) unstable; urgency=low
 
   * Initial release.
   * Add debian/patches/update-php-minversion to make galette work
