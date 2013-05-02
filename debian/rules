@@ -10,8 +10,8 @@ override_dh_install:
 		rm -rf debian/galette/usr/share/galette/$$dir; \
 	done
 	# Move config to /etc
-	mkdir -p debian/galette/etc
-	mv debian/galette/usr/share/galette/config debian/galette/etc/galette
+	mv debian/galette/usr/share/galette/config/* debian/galette/etc/galette/
+	rmdir debian/galette/usr/share/galette/config
 	# Drop documentation installed in /usr/share/doc
 	rm -rf debian/galette/usr/share/galette/docs
 	# Cleanup useless stuff

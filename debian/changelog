@@ -1,6 +1,9 @@
 galette (0.7.4.1-1) unstable; urgency=low
 
   * New upstream release.
+  * Add /etc/galette/behavior.inc.php to enable
+    GALETTE_UNSECURE_PASSWORDS because Squeeze's php-bcrypt doesn't have
+    the required support.
 
  -- Raphaël Hertzog <hertzog@debian.org>  Thu, 02 May 2013 18:56:08 +0200
 
