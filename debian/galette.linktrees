@@ -1,0 +1,6 @@
+# Provided by libjs-jquery-cookie
+replace usr/share/javascript/jquery-cookie/jquery.cookie.js usr/share/galette/includes/jquery/jquery.cookie.js
+# Provided by libjs-jquery
+replace usr/share/javascript/jquery/jquery.min.js usr/share/galette/includes/jquery/jquery-1.10.2.min.js
+# Provided by libjs-jquery-ui
+replace usr/share/javascript/jquery-ui/ui/ usr/share/galette/includes/jquery/jquery-ui-1.10.3/

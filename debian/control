@@ -2,7 +2,7 @@ Source: galette
 Section: web
 Priority: optional
 Maintainer: Raphaël Hertzog <hertzog@debian.org>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9), dh-linktree, libjs-jquery, libjs-jquery-ui, libjs-jquery-cookie
 Standards-Version: 3.9.4
 Homepage: http://galette.tuxfamily.org
 Vcs-Git: git://anonscm.debian.org/collab-maint/galette.git
