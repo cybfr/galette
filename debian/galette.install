@@ -1,4 +1,4 @@
 galette/* usr/share/galette/
-debian/apache/galette.conf etc/apache2/conf.d/
+debian/apache/galette.conf etc/apache2/conf-available/
 debian/behavior.inc.php etc/galette/
 debian/local_paths.inc.php etc/galette/

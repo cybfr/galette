@@ -1,2 +1,4 @@
 # I want this file, it can be useful to learn about optional dependencies
 galette: package-contains-upstream-install-documentation usr/share/doc/galette/INSTALL
+# apache configuration file compatible with 2.2 and 2.4
+galette: apache2-deprecated-auth-config *
