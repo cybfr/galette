@@ -1,1 +1,2 @@
-update-php-minversion
+# Enable this patch for a Squeeze backport
+# update-php-minversion

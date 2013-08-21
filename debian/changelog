@@ -2,7 +2,8 @@ galette (0.7.5-1) unstable; urgency=low
 
   * New upstream release.
   * Drop GALETTE_UNSECURE_PASSWORDS and increase dependencies to
-    require Wheezy's PHP.
+    require Wheezy's PHP. Disable usage of
+    debian/patches/update-php-minversion accordingly.
   * Add an /etc/cron.daily/galette scripts to send the mails
     asking renewals of membership. Add the corresponding php5-cli
     dependency.
