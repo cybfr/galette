@@ -14,6 +14,11 @@ override_dh_install:
 	rmdir debian/galette/usr/share/galette/config
 	# Drop documentation installed in /usr/share/doc
 	rm -rf debian/galette/usr/share/galette/docs
+	# Drop embedded libraries that we don't need
+	rm -rf debian/galette/usr/share/galette/includes/Zend-*
+	rm -rf debian/galette/usr/share/galette/includes/phpMailer-*
+	rm -rf debian/galette/usr/share/galette/includes/Smarty-*
+	rm -rf debian/galette/usr/share/galette/includes/tcpdf_*
 	# Cleanup useless stuff
 	rm -rf debian/galette/usr/share/galette/lang/*.py
 

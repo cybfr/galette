@@ -11,7 +11,9 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/galette.git;a=summ
 Package: galette
 Architecture: all
 Depends: ${misc:Depends}, php5-cli, libapache2-mod-php5 (>= 5.4), apache2 | httpd,
- php5-curl, php5-gd, php5-tidy, php5-mcrypt, php5-pgsql | php5-mysql | php5-sqlite
+ php5-curl, php5-gd, php5-tidy, php5-mcrypt, php5-pgsql | php5-mysql | php5-sqlite,
+# PHP libraries
+ zendframework (>= 1.11), libphp-phpmailer (>= 5.1), smarty3 (>= 3.1), php-tcpdf (>= 6.0.020)
 Recommends: php-gettext, postgresql
 Description: Membership and subscription management for associations
  Galette is a web application for French-speaking associations that
