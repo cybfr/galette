@@ -1,0 +1,12 @@
+Description: Fix shebang line to have proper interpeter path
+Author: Raphaël Hertzog <hertzog@debian.org>
+Forwarded: yes, by IRC
+
+--- a/galette/post_contribution_test.php
++++ b/galette/post_contribution_test.php
+@@ -1,4 +1,4 @@
+-#!/bin/php
++#!/usr/bin/php
+ <?php
+ 
+ /* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
