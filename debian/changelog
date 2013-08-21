@@ -12,6 +12,7 @@ galette (0.7.5-1) unstable; urgency=low
   * Fix URL of Git repository.
   * Configure galette to use FHS compliant paths.
   * Replace 4 embedded libraries by their packaged versions.
+  * Update package to be compatible with apache 2.4
 
  -- Raphaël Hertzog <hertzog@debian.org>  Wed, 21 Aug 2013 11:11:05 +0200
 
