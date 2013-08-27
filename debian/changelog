@@ -2,6 +2,7 @@ galette (0.7.5-2) UNRELEASED; urgency=low
 
   * Keep jquery & jquery ui provided by Galette.
   * Silence PHP notices in cron.
+  * Drop debian/patches/fix-php-shebang, merged upstream.
 
  -- Raphaël Hertzog <hertzog@debian.org>  Wed, 21 Aug 2013 23:00:14 +0200
 

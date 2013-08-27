@@ -1,3 +1,2 @@
 # Enable this patch for a Squeeze backport
 # update-php-minversion
-fix-php-shebang
