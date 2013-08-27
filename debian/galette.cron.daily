@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Send the reminder mails for members who have to renew their membership
-su - www-data -s /bin/sh -c "php5 /usr/share/galette/reminder.php"
+su - www-data -s /bin/sh -c "php5 -d error_reporting=22519 /usr/share/galette/reminder.php"
