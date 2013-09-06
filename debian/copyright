@@ -17,6 +17,12 @@ Files: galette/includes/html2text.php
 Copyright: 2010 Jevon Wright and others
 License: EPL-1.0
 
+Files: galette/includes/jquery/*
+Copyright: 2005-2013 jQuery Foundation, Inc. and other contributors
+License: Expat
+Comment: Non-minified javascript files are available in
+ debian/missing-sources/.
+
 Files: galette/includes/password_compat-*
 Copyright: 2012 Anthony Ferrara
 License: Expat
