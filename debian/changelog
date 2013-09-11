@@ -1,7 +1,7 @@
 galette (0.7.5.1-3) UNRELEASED; urgency=low
 
   * Fix /etc/cron.daily/galette to not fail when galette and/or php5 is
-    uninstalled. Detected by piuparts.
+    uninstalled. Detected by piuparts. Closes: #722464
 
  -- Raphaël Hertzog <hertzog@debian.org>  Sun, 08 Sep 2013 20:18:12 +0200
 
