@@ -1,4 +1,4 @@
-galette (0.7.6.1-1) UNRELEASED; urgency=low
+galette (0.7.6.1-1) unstable; urgency=low
 
   * New upstream version.
   * Fix /etc/cron.daily/galette to not fail when galette and/or php5 is
