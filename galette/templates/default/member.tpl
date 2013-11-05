@@ -74,7 +74,7 @@
     {/if}
     {if $visibles.societe_adh eq constant('Galette\Entity\FieldsConfig::VISIBLE') or ($visibles.societe_adh eq constant('Galette\Entity\FieldsConfig::ADMIN') and ($login->isStaff() or $login->isAdmin() or $login->isSuperAdmin()))}
                     <p>
-                        <label for="is_company" class="bline tooltip">{_T string="Is company?"}</label>
+                        <label for="is_company" class="bline tooltip" title="{_T string="Is member a company?"}">{_T string="Is company?"}</label>
                         <span class="tip">{_T string="Do you manage a non profit organization, or a company? If you do so, check the box, and then enter its name in the field that will appear."}</span>
                         <input type="checkbox" name="is_company" id="is_company" value="1"{if $member->isCompany()} checked="checked"{/if}/>
                     </p>
@@ -251,7 +251,7 @@
                 <div>
     {if $visibles.bool_display_info eq constant('Galette\Entity\FieldsConfig::VISIBLE') or ($visibles.bool_display_info eq constant('Galette\Entity\FieldsConfig::ADMIN') and ($login->isStaff() or $login->isAdmin() or $login->isSuperAdmin()))}
                     <p>
-                        <label for="bool_display_info" class="bline tooltip">{_T string="Be visible in the members list:"}</label>
+                        <label for="bool_display_info" class="bline tooltip" title="{_T string="Do member want to appear publically?"}">{_T string="Be visible in the members list:"}</label>
                         <span class="tip">{_T string="If you check this box (and if you are up to date with your contributions), your full name, website adress ad other informations will be publically visilbe on the members list.<br/>If you've uploaded a photo, it will be displayed on the trombinoscope page.<br/>Note that administrators can disabled public pages, this setting will have no effect in that case."}</span>
                         <input type="checkbox" name="bool_display_info" id="bool_display_info" value="1" {if $member->appearsInMembersList() eq 1}checked="checked"{/if}{if isset($disabled.bool_display_info)} {$disabled.bool_display_info}{/if}{if isset($required.bool_display_info) and $required.bool_display_info eq 1} required{/if}/>
                     </p>
@@ -381,7 +381,7 @@
             {/if}
         {/foreach}
                         </span>
-        {if $login->isAdmin() or $login->isStaff()}
+        {if $login->isAdmin() or $login->isStaff() or $login->isGroupManager()}
                         <span id="managedgroups_form">
             {foreach from=$groups item=group}
                 {if $member->isGroupManager($group->getName())}
@@ -390,18 +390,22 @@
             {/foreach}
                         </span>
         {/if}
+        {if $login->isAdmin() or $login->isStaff() or $login->isGroupManager()}<br/>{/if}
                         <span id="usergroups">
         {foreach from=$groups item=group name=groupsiterate}
             {if $member->isGroupMember($group->getName())}
-                {if not $smarty.foreach.groupsiterate.first}, {/if}
+                {if isset($isnotfirst)}, {/if}
+                {assign var=isnotfirst value=true}
                 {_T string="Member of '%groupname'" pattern="/%groupname/" replace=$group->getName()}
             {/if}
         {/foreach}
                         </span>
+        {if isset($isnotfirst)}<br/>{/if}
                         <span id="managedgroups">
         {foreach from=$groups item=group name=groupsmiterate}
             {if $member->isGroupManager($group->getName())}
-                {if not $smarty.foreach.groupsmiterate.first}, {/if}
+                {if isset($isnotfirstm)}, {/if}
+                {assign var=isnotfirstm value=true}
                 {_T string="Manager for '%groupname'" pattern="/%groupname/" replace=$group->getName()}
             {/if}
         {/foreach}
