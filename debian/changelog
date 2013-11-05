@@ -3,6 +3,8 @@ galette (0.7.6.1-1) UNRELEASED; urgency=low
   * New upstream version.
   * Fix /etc/cron.daily/galette to not fail when galette and/or php5 is
     uninstalled. Detected by piuparts. Closes: #722464
+  * Remove sources from debian/missing-sources/ for files that have been
+    removed upstream.
 
  -- Raphaël Hertzog <hertzog@debian.org>  Tue, 05 Nov 2013 09:30:12 +0100
 
