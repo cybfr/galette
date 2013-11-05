@@ -6,6 +6,7 @@ define('GALETTE_LOGS_PATH', '/var/log/galette/');
 define('GALETTE_COMPILE_DIR', '/var/cache/galette/templates_c/');
 define('GALETTE_CACHE_DIR', '/var/cache/galette/cache/');
 define('GALETTE_EXPORTS_PATH', '/var/lib/galette/exports/');
+define('GALETTE_IMPORTS_PATH', '/var/lib/galette/imports/');
 define('GALETTE_PHOTOS_PATH', '/var/lib/galette/photos/');
 define('GALETTE_TEMPIMAGES_PATH', '/var/cache/galette/tempimages/');
 define('GALETTE_SQLITE_PATH', '/var/lib/galette/database.sqlite');

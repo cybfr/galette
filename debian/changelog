@@ -1,3 +1,10 @@
+galette (0.7.6.1-2) unstable; urgency=low
+
+  * Update local_paths.inc.php with new GALETTE_IMPORTS_PATH and setup
+    the path with write rights to the webserver.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Tue, 05 Nov 2013 10:00:04 +0100
+
 galette (0.7.6.1-1) unstable; urgency=low
 
   * New upstream version.

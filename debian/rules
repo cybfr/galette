@@ -5,8 +5,8 @@
 
 override_dh_install:
 	dh_install
-	# Drop directories replaced by symlinks
-	for dir in cache exports logs photos tempimages templates_c; do \
+	# Drop directories which have been moved to FHS compliant paths
+	for dir in cache exports imports logs photos tempimages templates_c; do \
 		rm -rf debian/galette/usr/share/galette/$$dir; \
 	done
 	# Move config to /etc
@@ -29,6 +29,7 @@ override_dh_fixperms:
 	chown www-data debian/galette/var/cache/galette/tempimages
 	chown www-data debian/galette/var/cache/galette/templates_c
 	chown www-data debian/galette/var/lib/galette/exports
+	chown www-data debian/galette/var/lib/galette/imports
 	chown www-data debian/galette/var/lib/galette/photos
 
 override_dh_installchangelogs:
