@@ -1,9 +1,10 @@
-galette (0.7.8-1) UNRELEASED; urgency=medium
+galette (0.7.8-1) unstable; urgency=medium
 
   * New maintainer & Updating Standards-Version
   * Imported Upstream version 0.7.8
+  * Update local_paths.inc.php with new GALETTE_ATTACHMENTS_PATH.
 
- -- François-Régis Vuillemin <frv-debian@miradou.com>  Fri, 31 Jan 2014 01:28:37 +0100
+ -- François-Régis Vuillemin <frv-debian@miradou.com>  Thu, 06 Feb 2014 11:21:43 +0100
 
 galette (0.7.6.1-2) unstable; urgency=low
 
