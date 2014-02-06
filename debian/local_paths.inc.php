@@ -10,6 +10,7 @@ define('GALETTE_IMPORTS_PATH', '/var/lib/galette/imports/');
 define('GALETTE_PHOTOS_PATH', '/var/lib/galette/photos/');
 define('GALETTE_TEMPIMAGES_PATH', '/var/cache/galette/tempimages/');
 define('GALETTE_SQLITE_PATH', '/var/lib/galette/database.sqlite');
+define('GALETTE_ATTACHMENTS_PATH', '/var/lib/galette/attachments/');
 
 // External libraries packaged separately
 define('GALETTE_ZEND_PATH', '/usr/share/php/');

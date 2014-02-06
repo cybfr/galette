@@ -5,3 +5,4 @@
 /var/lib/galette/exports
 /var/lib/galette/imports
 /var/lib/galette/photos
+/var/lib/galette/attachments
